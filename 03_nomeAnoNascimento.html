@@ -7,9 +7,13 @@
     */
 
     //ENTRADA
-
+     let nome = prompt("Por favor, informe o seu primeiro nome:");
+     let anoNascimento = prompt("Agora, informe o ano em que você nasceu:");
     //PROCESSAMENTO
+    anoNascimento = parseInt(anoNascimento);
+     let anoAtual = new Date().getFullYear();
+     let idade = anoAtual - anoNascimento;
 
     //SAÍDA
-
+     alert(nome + ", você nasceu em " + anoNascimento + ". E tem " + idade + " anos.");
 </script>
